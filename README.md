@@ -1,4 +1,4 @@
-# Basics JavaScript 🔰
+# JavaScript Basics 🔰
 Basic JavaScript Examples for beginners
 
 - Const, Var y Let
