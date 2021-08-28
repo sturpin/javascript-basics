@@ -7,3 +7,4 @@ Basic JavaScript Examples for beginners
 - Destructuring 
 - Callbacks
 - Callbacks Hell
+- Promises

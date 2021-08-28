@@ -41,14 +41,14 @@ const getEmpleado = ( id ) => {
 
         const empleado = empleados.find (e => e.id === id)?.nombre;
         
-        (empleado) 
+        ( empleado ) 
             ? resolve(empleado)
             : reject(`No existe el empleado con el id ${id}.`);
     });
 }
 
 
-const getSalario = (id) => {
+const getSalario = ( id ) => {
 
     return new Promise( (resolve, reject) => {
 
@@ -76,7 +76,7 @@ getEmpleado(id)
         // por ello puedo devolver una promesa y concatenarla
         return getSalario( id )
     })
-    .then( salario => console.log('El empleado con el nombre',nombre,'tiene un salario de',salario))
+    .then( salario => console.log( 'El empleado con el nombre',nombre,'tiene un salario de',salario) )
     // => El empleado con el nombre May tiene un salario de 1500
-    .catch( err => console.log( err ));
+    .catch( err => console.log( err ) );
     // Con este catch manejo ambas excepciones
